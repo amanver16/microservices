@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "giftcard",
+                "projectName": "giftcard",
+                "workingDirectory": "d:\\Aman\\How To\\Java Tutorials\\Microservices\\05-GiftCard-Axon-CQRS-ES",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "giftcard",
+                "projectName": "giftcard",
+                "workingDirectory": "d:\\Aman\\How To\\Java Tutorials\\Microservices\\05-GiftCard-Axon-CQRS-ES",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

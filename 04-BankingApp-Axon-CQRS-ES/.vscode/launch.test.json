@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "04-BankingApp-Axon-CQRS-ES",
+                "projectName": "04-BankingApp-Axon-CQRS-ES",
+                "workingDirectory": "d:\\Aman\\How To\\Java Tutorials\\Microservices\\04-BankingApp-Axon-CQRS-ES",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "04-BankingApp-Axon-CQRS-ES",
+                "projectName": "04-BankingApp-Axon-CQRS-ES",
+                "workingDirectory": "d:\\Aman\\How To\\Java Tutorials\\Microservices\\04-BankingApp-Axon-CQRS-ES",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
