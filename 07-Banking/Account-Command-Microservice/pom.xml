@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.aman.banking</groupId>
+	<artifactId>Account-Command-Microservice</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+
+	<name>Account Command Microservice</name>
+	<description>Account Command Side Application</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.5.RELEASE</version>
+		<relativePath/>
+		<!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Finchley.SR1</spring-cloud.version>
+		<axon.version>3.3.6</axon.version>
+	</properties>
+
+	<dependencies>
+
+		<!-- Spring Boot RabbitMq Dependency -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
+
+		<!-- Spring Boot MongoDb Dependency -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Starter Web Depenedency for Rest API -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Eureka Server Dependency -->
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Test Dependency -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Spring Boot Axon Dependency for CQRS -->
+
+		<dependency>
+			<groupId>org.axonframework</groupId>
+			<artifactId>axon-spring-boot-starter</artifactId>
+			<version>${axon.version}</version>
+		</dependency>
+
+		<!-- Axon Mongo Dependency for Event Store -->
+
+		<dependency>
+			<groupId>org.axonframework</groupId>
+			<artifactId>axon-mongo</artifactId>
+			<version>${axon.version}</version>
+		</dependency>
+
+		<!-- Axon Test Dependency -->
+
+		<dependency>
+			<groupId>org.axonframework</groupId>
+			<artifactId>axon-test</artifactId>
+			<version>${axon.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Lombok Dependency -->
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<!-- Axon Distributed Command Bus Dependency -->
+
+		<dependency>
+			<groupId>org.axonframework</groupId>
+			<artifactId>axon-distributed-commandbus-springcloud</artifactId>
+			<version>${axon.version}</version>
+		</dependency>
+
+		<!-- Axon Amqp Dependency -->
+
+		<dependency>
+			<groupId>org.axonframework</groupId>
+			<artifactId>axon-amqp</artifactId>
+			<version>${axon.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
