@@ -44,10 +44,8 @@ public class BankAccount implements Serializable {
         Assert.hasLength(createAccountCommand.getAccountType(), "Please specify account type !!!");
         Assert.hasLength(createAccountCommand.getCustomerBean().getName(), "The name is required !!!");
         Assert.hasLength(createAccountCommand.getCustomerBean().getEmail(), "Email is required !!!");
-        Assert.isNull(createAccountCommand.getCustomerBean().getPhone(), "Phone is required !!!");
+        Assert.isTrue(createAccountCommand.getCustomerBean().getPhone() > 0, "Phone is required !!!");
         Assert.hasLength(createAccountCommand.getCustomerBean().getNomineeName(), "Nominee is required !!!");
-        Assert.isTrue(createAccountCommand.getBalance() > 500.0,
-                "500 minimum balance is required to open an account !!!");
 
         AccountCreatedEvent accountCreatedEvent = new AccountCreatedEvent();
 
@@ -64,7 +62,6 @@ public class BankAccount implements Serializable {
         Assert.hasLength(closeAccountCommand.getAccountNumber(), "Account number is required !!!");
         AccountClosedEvent accountClosedEvent = new AccountClosedEvent();
         accountClosedEvent.setAccountNumber(closeAccountCommand.getAccountNumber());
-        accountClosedEvent.setCustomerBean(closeAccountCommand.getCustomerBean());
         AggregateLifecycle.apply(accountClosedEvent);
     }
 

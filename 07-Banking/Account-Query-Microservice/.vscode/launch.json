@@ -2,6 +2,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AccountQueryApp",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.aman.banking.account.AccountQueryApp",
+            "args": "",
+            "projectName": "05-GiftCard-Query-Microservice"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)",
             "request": "launch",
             "cwd": "${workspaceFolder}",
