@@ -9,6 +9,17 @@
             "stopOnEntry": false,
             "mainClass": "com.aman.banking.account.AccountCommandApp",
             "args": "",
+            "projectName": "Account-Command-Microservice"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AccountCommandApp",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.aman.banking.account.AccountCommandApp",
+            "args": "",
             "projectName": "Signup-Command-Microservice"
         }
     ]

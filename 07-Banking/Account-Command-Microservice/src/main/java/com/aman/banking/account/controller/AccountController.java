@@ -1,5 +1,6 @@
 package com.aman.banking.account.controller;
 
+import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
 import com.aman.banking.account.command.CloseAccountCommand;
@@ -25,6 +26,8 @@ public class AccountController {
 
     @PostMapping("/create")
     public CompletableFuture<String> createAccount(@RequestBody CreateAccountCommand createAccountCommand) {
+        String accountNumber = UUID.randomUUID().toString();
+        createAccountCommand.setAccountNumber(accountNumber);
         return commandGateway.send(createAccountCommand);
     }
 

@@ -9,6 +9,17 @@
             "stopOnEntry": false,
             "mainClass": "com.aman.banking.serverpoint.BankingServiceDiscoveryApp",
             "args": "",
+            "projectName": "Banking-Service-Discovery"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BankingServiceDiscoveryApp",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.aman.banking.serverpoint.BankingServiceDiscoveryApp",
+            "args": "",
             "projectName": "05-GiftCard-Discovery-Microservice"
         },
         {
