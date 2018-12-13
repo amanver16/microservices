@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.aman.banking</groupId>
-	<artifactId>Banking-Service-Discovery</artifactId>
+	<artifactId>BankingServiceDiscovery</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
@@ -28,15 +28,11 @@
 
 	<dependencies>
 
+		<!-- Spring Cloud Netflix Eureka Server Dependency -->
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 
 	</dependencies>

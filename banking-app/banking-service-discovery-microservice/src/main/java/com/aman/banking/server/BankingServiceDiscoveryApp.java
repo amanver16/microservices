@@ -1,4 +1,4 @@
-package com.aman.banking.serverpoint;
+package com.aman.banking.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

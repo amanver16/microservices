@@ -6,12 +6,10 @@ import com.aman.banking.account.bean.CustomerBean;
 import com.aman.banking.account.command.CloseAccountCommand;
 import com.aman.banking.account.command.CreateAccountCommand;
 import com.aman.banking.account.command.DepositMoneyCommand;
-import com.aman.banking.account.command.TransferMoneyCommand;
 import com.aman.banking.account.command.WithdrawMoneyCommand;
 import com.aman.banking.account.event.AccountClosedEvent;
 import com.aman.banking.account.event.AccountCreatedEvent;
 import com.aman.banking.account.event.MoneyDepositedEvent;
-import com.aman.banking.account.event.MoneyTransferredEvent;
 import com.aman.banking.account.event.MoneyWithdrawnEvent;
 import com.aman.banking.account.exception.InsufficientBalanceException;
 

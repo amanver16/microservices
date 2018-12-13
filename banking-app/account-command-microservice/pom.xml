@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.aman.banking</groupId>
-	<artifactId>Account-Command-Microservice</artifactId>
+	<artifactId>AccountCommandMicroservice</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
@@ -55,14 +55,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-
-		<!-- Spring Boot Test Dependency -->
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 
 		<!-- Spring Boot Axon Dependency for CQRS -->
